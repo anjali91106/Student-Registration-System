@@ -45,14 +45,16 @@ function addDetails(event) {
   //Get exixting students from local storage
   let students = JSON.parse(localStorage.getItem("students")) || [];
 
+   // Check for duplicate Student ID before adding
+if (students.some(student => String(student.id) === String(studentID.value))) {
+  alert("Student ID already exists!");
+  return;
+}
+
   //Add new student to array
   students.push(student);
 
-    // to check for duplicate Student IDs:
-    if (students.some(student => student.id === studentID.value)) {
-      alert("Student ID already exists!");
-      return;
-  }
+   
 
   //Save updated students array to localstorage
   localStorage.setItem("students", JSON.stringify(students));

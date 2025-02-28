@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>SRS (Student Registration System)</title>
+  </head>
+  <body>
+    <header class="header">
+      <span>
+        <h1>Student Registration Below :-</h1>
+      </span>
+    </header>
+
+    <!-- Student Registration form -->
+    <form id="form">
+      <label for="fname">First name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        placeholder="type name here"
+        autocomplete="name"
+      /><br />
+
+      <label for="lname">Last name:</label><br />
+      <input
+        type="text"
+        id="lname"
+        placeholder="type name here"
+        autocomplete="name"
+      /><br />
+
+      <label for="email">Email ID:</label><br />
+      <input
+        type="email"
+        id="email"
+        placeholder="email ID @"
+        autocomplete="email"
+        pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" 
+        required
+      /><br />
+
+      <label for="StudentId">Student ID:</label><br />
+      <input
+        type="text"
+        id="StudentId"
+        placeholder="Student ID"
+        autocomplete="name"
+      /><br />
+
+      <label for="Contact">Contact No. :</label><br />
+      <input type="number" id="Contact" placeholder="Contact(0-9)" /><br />
+
+      <button class="Submit" type="submit">Add Student</button>
+    </form>
+
+    
+
+    <!-- Display of all the student registered -->
+
+     <h2>Details of the students who have already registered :-</h2>
+
+    <table class="student-table">
+      <thead>
+        <tr >
+          <th>Edit</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email ID</th>
+          <th>Student ID</th>
+          <th>Contact No</th>
+        </tr>
+      </thead >
+
+<!-- Where all the details will be stored  -->
+      <tbody>
+        
+      </tbody>
+    </table>
+
+
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

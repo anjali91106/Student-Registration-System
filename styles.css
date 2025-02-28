@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Giving a color pallet to the website */
+:root {
+  --primary-color: #87adc6;
+  --secondary-color: #578098;
+  --ternary-color: #203038;
+  --forth-color: #cbe4ed;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+/* Adding the Heading on centre */
+span h1 {
+  text-align: center;
+  color: white;
+}
+
+
+
+/* styling form  */
+
+form {
+  border: 2px solid white;
+  border-radius: 10vh;
+  width: auto;
+  margin: 10px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--forth-color);
+}
+
+form label {
+  margin: 20px;
+}
+
+form input {
+  margin: 10px;
+  border-radius: 20vh;
+  border: none;
+  height: 3vh;
+  width: auto;
+  padding-left: 10px;
+}
+
+
+form button{
+    background-color: var(--ternary-color);
+    color: white;
+    height: auto;
+    width: 15vh;
+    border-radius: 20%;
+    margin-left: 5vh;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: var(--primary-color);
+    border: none;
+}
+
+/* styling the display students table */
+
+table {
+  /* border-collapse: collapse; */
+  width: 80%;
+  margin: 2vh;
+}
+
+/* Apply a rectangle box around the entire <th> row */
+thead {
+  border: 2px solid black;
+}
+
+tbody {
+  border: 2px solid black;
+}
+
+/* Ensure individual th elements do not have separate borders */
+th {
+  border: none;
+  padding: 10px;
+  background-color: var(--primary-color);
+}
+
+td{
+  border: none;
+  padding: 10px;
+  background-color: var(--primary-color);
+}
+
+/* styling the edit button */
+.edit-btn{
+  background-color: var(--ternary-color);
+  color: white;
+  height: auto;
+  border-radius: 20%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* styling the save button after editing the info of students */
+.save-btn {
+  margin: 2vh;
+  background-color: var(--ternary-color);
+  border-radius: 20%;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+}
+
+/* styling delete button */
+.delete-btn {
+  margin-top: 2vh;
+  background-color: var(--ternary-color);
+  border-radius: 20%;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+}
